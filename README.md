@@ -46,7 +46,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url = uri("https://maven.pkg.github.com/aphougat/clickstream-android")
+            url = uri("https://maven.pkg.github.com/surveyanalytica/clickstream-android")
             credentials {
                 username = providers.gradleProperty("gpr.user").orElse("").get()
                 password = providers.gradleProperty("gpr.token").orElse("").get()
@@ -212,7 +212,7 @@ Each event sent to the endpoint has the following shape:
 ## Building locally
 
 ```bash
-git clone https://github.com/aphougat/clickstream-android.git
+git clone https://github.com/surveyanalytica/clickstream-android.git
 cd clickstream-android
 ./gradlew :library:assembleRelease
 ```

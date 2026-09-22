@@ -70,7 +70,7 @@ afterEvaluate {
                         "Lightweight Android SDK for sending behavioral events to the " +
                             "SurveyAnalytica workflow engine."
                     )
-                    url.set("https://github.com/aphougat/clickstream-android")
+                    url.set("https://github.com/surveyanalytica/clickstream-android")
                     licenses {
                         license {
                             name.set("MIT License")
@@ -85,11 +85,11 @@ afterEvaluate {
                         }
                     }
                     scm {
-                        connection.set("scm:git:git://github.com/aphougat/clickstream-android.git")
+                        connection.set("scm:git:git://github.com/surveyanalytica/clickstream-android.git")
                         developerConnection.set(
-                            "scm:git:ssh://github.com/aphougat/clickstream-android.git"
+                            "scm:git:ssh://github.com/surveyanalytica/clickstream-android.git"
                         )
-                        url.set("https://github.com/aphougat/clickstream-android")
+                        url.set("https://github.com/surveyanalytica/clickstream-android")
                     }
                 }
             }
@@ -99,7 +99,7 @@ afterEvaluate {
             // GitHub Packages
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/aphougat/clickstream-android")
+                url = uri("https://maven.pkg.github.com/surveyanalytica/clickstream-android")
                 credentials {
                     username = System.getenv("GITHUB_ACTOR") ?: ""
                     password = System.getenv("GITHUB_TOKEN") ?: ""
